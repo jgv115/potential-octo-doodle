@@ -35,10 +35,13 @@ namespace InvoicrApp
             {
                 var response = await _httpClient.GetFromJsonAsync<InvoiceEventResponse>(await InvoiceApiSettings.GenerateUriAsync(), _jsonSerializerOptions, stoppingToken);
 
-                await InvoiceApiSettings.SaveLastProcessedEventIdAsync(response.Items.Last().Id);
-                foreach (var invoiceEvent in response.Items)
+                if (response.Items.Any())
                 {
-                    await _invoiceHandler.ProcessEventAsync(invoiceEvent);
+                    await InvoiceApiSettings.SaveLastProcessedEventIdAsync(response.Items.Last().Id);
+                    foreach (var invoiceEvent in response.Items)
+                    {
+                        await _invoiceHandler.ProcessEventAsync(invoiceEvent);
+                    }
                 }
             }
         }
