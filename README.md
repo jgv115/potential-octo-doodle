@@ -35,4 +35,4 @@ The application consumes Invoices Event feed which Xero provides and creates a c
 
 ## Xero Invoices Event feed contract
 
-https://invoicr-eventfeed.netlify.app/#/
+http://localhost:8200/docs/v1
