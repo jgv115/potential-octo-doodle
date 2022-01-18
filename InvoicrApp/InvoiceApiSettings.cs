@@ -5,7 +5,7 @@ namespace InvoicrApp
 {
     public class InvoiceApiSettings
     {
-        private const string InvoiceApiUri = "https://invoicr-eventfeed.netlify.app/api/invoices/events";
+        private const string InvoiceApiUri = "http://localhost:8200/api/v1/invoices/events";
         private static readonly string LastProcessedEventFolder = Path.Combine(Directory.GetCurrentDirectory(), "Data");
         private static readonly string LastProcessedEventFilePath = Path.Combine(LastProcessedEventFolder, "InvoicrAppLastProcessedEvent.txt");
 
