@@ -34,5 +34,6 @@ The application consumes Invoices Event feed which Xero provides and creates a c
    ```
 
 ## Xero Invoices Event feed contract
+Requires the mock to be running in Step 3
 
 http://localhost:8200/docs/v1
