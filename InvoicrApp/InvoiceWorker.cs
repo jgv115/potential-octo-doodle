@@ -23,7 +23,7 @@ namespace InvoicrApp
 
             _jsonSerializerOptions = new JsonSerializerOptions
             {
-                IgnoreNullValues = true,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
             _jsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
