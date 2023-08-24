@@ -39,8 +39,8 @@ namespace InvoicrApp.Tests
             var expectedFileOutput =
 $@"Invoice Number: INV-Test-001
 Status: DRAFT
-Created Date: 22/03/2021 7:15:00 PM
-Due Date: 1/01/2022 12:00:00 AM
+Created Date: 2021-03-22T19:15:00.0000000Z
+Due Date: 2022-01-01T00:00:00.0000000Z
 
 
 Item description: Xero Supplier

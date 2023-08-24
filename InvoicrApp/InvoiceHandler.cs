@@ -24,8 +24,8 @@ namespace InvoicrApp
             {
                 $"Invoice Number: {invoiceEvent.Content.InvoiceNumber}",
                 $"Status: {invoiceEvent.Content.Status}",
-                $"Created Date: {invoiceEvent.Content.CreatedDateUtc.ToString(new CultureInfo("en-NZ"))}",
-                $"Due Date: {invoiceEvent.Content.DueDateUtc.ToString(new CultureInfo("en-NZ"))}",
+                $"Created Date: {invoiceEvent.Content.CreatedDateUtc:O}",
+                $"Due Date: {invoiceEvent.Content.DueDateUtc:O}",
                 Environment.NewLine
             };
 
