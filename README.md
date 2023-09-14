@@ -4,7 +4,7 @@ The application consumes Invoices Event feed which Xero provides and creates a c
 
 ## Local Setup
 
-1. Download and install the `.NET 5` SDK. Link [here](https://dotnet.microsoft.com/download/dotnet/5.0)
+1. Download and install the `.NET 6` SDK. Link [here](https://dotnet.microsoft.com/download/dotnet/6.0)
 2. Clone this repository.
 3. Use the following commands to start the mock API on http://localhost:8200. This is required for the Invoicr app to run.
 
